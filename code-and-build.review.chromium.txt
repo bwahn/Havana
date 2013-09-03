@@ -1,0 +1,22 @@
+
+#########################################
+# windows 
+g:\Havana\gclient_test> gclient sync
+
+##############
+# gclient -> gclient.bat
+PATH=%~dp0;%PATH%
+	// %~dp0 :  
+	// g:\Havana\gclient_test> gclient.bat 
+	// d and p modifiers will exapnd g:\Havana\gclient_test\		
+
+call %~dp0\update_depot_tools.bat
+	// just depot tools upgrade 
+
+%~dp0python "%~dp0\gclient.py" %*
+
+##########################################
+# gclient.py
+
+##########################################
+init_project.py
