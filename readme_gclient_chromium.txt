@@ -2,18 +2,18 @@
 ##### command                                             ####
 ##############################################################
 
-// 최초 code를 다운로드할때
+// how to get chromium
 	> cd E:\chromiumwork\gclient_chromium\
 
 	> gclient config https://src.chromium.org/svn/trunk/src
 	> gclient sync
 
-// 디렉토리를 지우고 다시 하고 싶을때
+// remove and get code
 	> cd E:\chromiumwork\gclient_chromium\
 	> c:/util/delfolder.bat E:\chromiumwork\gclient_chromium\src
 	> gclient sync
 
-// 평상시 최신 코드 동기화할때
+// sync
 	> cd E:\chromiumwork\gclient_chromium\
 	> gclient sync
 
